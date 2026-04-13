@@ -1,0 +1,11 @@
+{
+  "name": "accountill",
+  "private": true,
+  "scripts": {
+    "client-install": "npm install --prefix client",
+    "server-install": "npm install --prefix server",
+    "postinstall": "npm run client-install && npm run server-install",
+    "build": "npm run build --prefix client",
+    "start": "npm start --prefix server"
+  }
+}
